@@ -1,13 +1,125 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+  min-width: 530px;
+}
+
+img {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-left: 2.3em;
+  overflow: auto;
+}
+
+.logo {
+  margin: auto;
+  width: auto;
+}
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 1em;
+  justify-content: center;
+  text-align: center;
+  background-color: lightgray;
+  margin-bottom: 2em;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  /* background-color: #fef6dc; */
+  background-image: linear-gradient(
+    90deg,
+    #c5a942 0,
+    #ffd326 10%,
+    #ffd326 40%,
+    #e5bb27 100%
+  );
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  grid-gap: 1rem;
+  margin: auto;
+  width: 80%;
+  padding: 0.2rem;
+}
+.product {
+  background: #f4f4f4;
+  margin: auto;
+  padding: 1em;
+  width: 80%;
+  max-width: fit-content;
+  cursor: pointer;
+}
+
+.center .product {
+  width: 50%;
+}
+
+.center .product img {
+  margin: auto;
+}
+
+.product h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  bottom: 0;
+  margin-top: 10px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba(53, 53, 53, 0.952);
+  color: rgb(201, 201, 201);
 }
